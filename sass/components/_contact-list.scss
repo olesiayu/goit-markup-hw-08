@@ -1,0 +1,35 @@
+.contact-list {
+  // display: flex;
+  // margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-list {
+    display: none;
+  }
+}
+
+.contact-list__item + .contact-list__item {
+  // margin-left: 50px;
+}
+
+.contact-list__link {
+  // @include centeredFlex();
+  transition: color $transition-duration $transition-timing-function;
+  color: $primary-text-color;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.contact-list__icon {
+  // margin-right: 10px;
+  transition: fill $transition-duration $transition-timing-function;
+}

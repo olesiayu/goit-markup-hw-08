@@ -1,0 +1,150 @@
+// Модальная форма
+.modal-form {
+  padding: 40px;
+}
+.modal-form__title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: $title-text-color;
+}
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-field__label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $primary-text-color;
+}
+.form-field__input {
+  width: 370px;
+  // width: 448px;
+  height: 40px;
+  padding-left: 35px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color $transition-duration $transition-timing-function;
+
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.form-field__icon {
+  fill: currentColor;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transition: fill $transition-duration $transition-timing-function;
+
+  .form-field__input:focus + & {
+    fill: $accent-color;
+  }
+}
+
+.form-field__textarea {
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  width: 370px;
+  // width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+
+  &:focus {
+    border-color: $accent-color;
+  }
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    // font-size: 12px;
+    // line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.checkbox-thumb {
+  position: relative;
+}
+
+.agreement-label {
+  @include centeredFlex();
+  font-size: 12px;
+  line-height: 1.17;
+  // font-size: 14px;
+  // line-height: 1.71;
+  color: $primary-text-color;
+}
+
+.agreement-label__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  &:checked + .agreement-label__icon {
+    border-color: transparent;
+    background-color: $accent-color;
+    background-image: url("../images/icon-check.svg");
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
+
+.agreement-label__icon {
+  @include centeredFlex();
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 2px;
+}
+
+.agreement-label__link {
+  color: $accent-color;
+}
+
+.send-button {
+  display: flex;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+  width: 200px;
+  height: 50px;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid $accent-color;
+  cursor: pointer;
+  transition: background-color $transition-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $hero-button-focus-bg-color;
+  }
+}

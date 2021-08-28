@@ -1,0 +1,25 @@
+.logo {
+  // padding: 24px 0 25px 0;
+  color: $logo-color;
+  font-family: $second-font-family;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.17;
+  text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.logo--accent {
+  color: $accent-color;
+}
+.logo--white {
+  color: $primary-white-color;
+}
+.logo--footer {
+  // padding: 0 0 0 0;
+}
