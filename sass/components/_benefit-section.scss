@@ -9,7 +9,7 @@
 
 .benefits__item {
   margin: auto;
-  width: 450px;
+  max-width: 450px;
   // width: 270px;
 
   &:not(:last-child) {

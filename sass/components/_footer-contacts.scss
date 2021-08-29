@@ -2,11 +2,20 @@
   // margin-top: 20px;
 }
 .address__text {
+  margin-bottom: 8px;
   // margin-bottom: 9px;
   color: $primary-white-color;
   font-style: normal;
+  text-align: center;
 }
+
+.footer-contacts {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
 .footer-contacts__item + .footer-contacts__item {
+  margin-top: 8px;
   // margin-top: 9px;
 }
 .footer-contacts__link {

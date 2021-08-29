@@ -1,4 +1,5 @@
 header {
+  position: relative;
   border-bottom: 1px solid $header-border-bottom;
 }
 
@@ -6,5 +7,4 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 15px;
 }

@@ -1,19 +1,22 @@
 // Присоединяйтесь
 .join-block {
+  text-align: center;
+  margin-bottom: 60px;
   // margin-left: 70px;
 }
 
 .footer-social-networks {
-  // display: flex;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-social-networks__item + .footer-social-networks__item {
-  // margin-left: 10px;
+  margin-left: 10px;
 }
 .footer-social-networks__link {
-  // @include centeredFlex();
-  // width: 44px;
-  // height: 44px;
+  @include centeredFlex();
+  width: 44px;
+  height: 44px;
   background-color: $footer-icon-background;
   border-radius: 50%;
   transition: background-color $transition-duration $transition-timing-function;
