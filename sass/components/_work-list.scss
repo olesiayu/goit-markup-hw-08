@@ -1,26 +1,28 @@
 /* Секция чем мы занимаемся */
 .work-section {
-  @media screen and (max-width: 767px) {
-    display: none;
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
   }
 }
 
 .work-list {
-  // display: flex;
+  display: flex;
 }
 .work-list__item {
-  // width: 370px;
+  width: 370px;
   position: relative;
 }
 .work-list__item + .work-list__item {
-  // margin-left: 30px;
+  margin-left: 30px;
 }
 .work-list__overlay {
   position: absolute;
   bottom: 0;
-  // @include centeredFlex();
-  // width: 100%;
-  // height: 70px;
+  @include centeredFlex();
+  width: 100%;
+  height: 70px;
   background-color: $work-overlay-color;
 }
 .work-list__content {

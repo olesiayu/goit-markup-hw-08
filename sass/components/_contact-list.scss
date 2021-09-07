@@ -1,16 +1,19 @@
 .contact-list {
-  // display: flex;
-  // margin-left: auto;
-}
+  margin-left: auto;
 
-@media screen and (max-width: 767px) {
-  .contact-list {
+  @media screen and (max-width: 767px) {
     display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
 .contact-list__item + .contact-list__item {
-  // margin-left: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
 }
 
 .contact-list__link {
@@ -30,6 +33,6 @@
 }
 
 .contact-list__icon {
-  // margin-right: 10px;
+  margin-right: 8px;
   transition: fill $transition-duration $transition-timing-function;
 }
