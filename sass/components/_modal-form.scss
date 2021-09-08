@@ -6,9 +6,13 @@
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   color: $title-text-color;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 .form-field {
   position: relative;
@@ -72,10 +76,13 @@
   &::placeholder {
     font-size: 14px;
     line-height: 1.14;
-    // font-size: 12px;
-    // line-height: 1.17;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and (min-width: 1200px) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
   }
 }
 
@@ -87,9 +94,12 @@
   @include centeredFlex();
   font-size: 12px;
   line-height: 1.17;
-  // font-size: 14px;
-  // line-height: 1.71;
   color: $primary-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .agreement-label__checkbox {

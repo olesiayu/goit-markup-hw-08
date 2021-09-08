@@ -19,7 +19,7 @@
 
 .benefits__item {
   @media screen and (max-width: 767px) {
-    margin: auto;
+    // margin: auto;
     max-width: 450px;
 
     &:not(:last-child) {
@@ -58,5 +58,8 @@
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
-  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
